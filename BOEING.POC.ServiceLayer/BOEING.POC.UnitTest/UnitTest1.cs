@@ -40,7 +40,7 @@ namespace BOEING.POC.UnitTest
                 var result = _response.Content.ReadAsStringAsync().Result;
 
                 //Asset
-                Assert.AreEqual("HelloWorld", result.Replace("\"", ""));
+                Assert.AreEqual("Hello World!", result.Replace("\"", ""));
 
             }
         }
@@ -58,7 +58,7 @@ namespace BOEING.POC.UnitTest
                 var result = _response.Content.ReadAsStringAsync().Result;
 
                 //Asset
-                Assert.AreEqual(string.Format("Hello {0}!", strParameterValue), result.Replace("\"", ""));
+                Assert.AreEqual(string.Format("Hello {0} World!", strParameterValue), result.Replace("\"", ""));
             }
         }
     }

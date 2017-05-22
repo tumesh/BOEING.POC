@@ -12,13 +12,13 @@ namespace BOEING.POC.Microservices.Controllers
         [Route("api/v1/BOEING/Services/HelloWorld")]
         public string GetHelloWorld()
         {
-            return "HelloWorld";
+            return "Hello World!";
         }
 
         [Route("api/v1/BOEING/Services/HelloWorld/{UserName}")]
         public string GetHelloWorld(string UserName)
         {
-            return string.Format("Hello {0}!", UserName);
+            return string.Format("Hello {0} World!", UserName);
         }
     }
 }
